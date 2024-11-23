@@ -1,12 +1,13 @@
 {% raw %}
 {
   "project_name": "function__template",
-  "project_author_name": "Y4ng0",
-  "project_author_email": "",
-  "project_url": "https://github.com/{{cookiecutter.author_name}}/{{cookiecutter.project_name}}",
-  "project_description": "a template for function",
-  "project_version": "0.1.0",
-  "project_create_github_repo": ["yes", "no"],
-  "project_github_token": "your_github_token"
+  "author_name": "Y4ng0",
+  "author_email": "",
+  "url": "https://github.com/{{cookiecutter.author_name}}/{{cookiecutter.project_name}}",
+  "description": "a template for function",
+  "version": "0.1.0",
+  "create_github_repo": ["yes", "no"],
+  "github_token": "your_github_token",
+  "private_repo": ["no", "yes"]
 }
 {% endraw %}
