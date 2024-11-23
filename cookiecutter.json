@@ -5,7 +5,7 @@
   "url": "https://github.com/{{cookiecutter.author_name}}/{{cookiecutter.project_name}}",
   "description": "a template for function",
   "version": "0.1.0",
-  "function": "api",
+  "function": "flask",
   "create_github_repo": "yes",
   "github_token": "your_github_token"
 }
