@@ -2,7 +2,7 @@
   "template_name": "function__template",
   "author_name": "Y4ng0",
   "email": "",
-  "url": "https://github.com/{{cookiecutter.author_name}}/{{cookiecutter.project_name}}",
+  "url": "https://github.com/{{cookiecutter.author_name}}/{{cookiecutter.template_name}}",
   "description": "a template for function",
   "version": "0.1.0",
   "function": "flask",
