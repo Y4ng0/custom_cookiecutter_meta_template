@@ -1,4 +1,5 @@
 import os
+import shutil
 import subprocess
 import requests
 import json
@@ -11,6 +12,12 @@ github_token = '{{ cookiecutter.github_token }}'
 
 # Set the project directory path
 project_dir = os.path.abspath(os.path.curdir)
+
+old_dir = "project_destination"
+new_dir = "cookiecutter.project_name"
+
+if os.path.exists(old_dir):
+    shutil.move(old_dir, "{{ " + new_dir + " }}")
 
 try:
     subprocess.run(['git', 'init'], cwd=project_dir, check=True)
