@@ -1,3 +1,4 @@
+{% raw %}
 {
   "project_name": "function__template",
   "project_author_name": "Y4ng0",
@@ -8,3 +9,4 @@
   "project_create_github_repo": ["yes", "no"],
   "project_github_token": "your_github_token"
 }
+{% endraw %}
