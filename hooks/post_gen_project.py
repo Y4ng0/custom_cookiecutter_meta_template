@@ -19,6 +19,9 @@ new_dir = "cookiecutter.project_name"
 if os.path.exists(old_dir):
     shutil.move(old_dir, "{{ " + new_dir + " }}")
 
+if os.path.exists("cookiecutter"):
+    shutil.move("cookiecutter", "cookiecutter.json")
+
 try:
     subprocess.run(['git', 'init'], cwd=project_dir, check=True)
     subprocess.run(['git', 'add', '.'], cwd=project_dir, check=True)
