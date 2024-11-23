@@ -4,15 +4,13 @@ import requests
 import json
 
 # Get user input from cookiecutter.json context
-project_name = '{{ cookiecutter.project_name }}'
+project_name = '{{ cookiecutter.template_name }}'
 author_name = '{{ cookiecutter.author_name }}'
 create_github_repo = '{{ cookiecutter.create_github_repo }}'.lower() == 'yes'
 github_token = '{{ cookiecutter.github_token }}'
 
 # Set the project directory path
 project_dir = os.path.abspath(os.path.curdir)
-
-
 
 try:
     subprocess.run(['git', 'init'], cwd=project_dir, check=True)
