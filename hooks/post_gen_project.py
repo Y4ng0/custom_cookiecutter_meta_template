@@ -12,6 +12,8 @@ github_token = '{{ cookiecutter.github_token }}'
 # Set the project directory path
 project_dir = os.path.abspath(os.path.curdir)
 
+
+
 try:
     subprocess.run(['git', 'init'], cwd=project_dir, check=True)
     subprocess.run(['git', 'add', '.'], cwd=project_dir, check=True)
